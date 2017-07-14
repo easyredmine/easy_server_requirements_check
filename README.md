@@ -11,14 +11,12 @@ Supported distributions:
 
 ## How to use ?
 
-Run script directly from web:
-
-    curl -sSL https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.sh | bash -s
-
-or deploy the [easycheck.sh](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.sh) script to destination server somehow and run:
+deploy the [easycheck.sh](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.sh) script to destination server somehow and run:
 
         sh ./easycheck.sh
 
+
+[](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.png)
 
 ## How to test ?
 
