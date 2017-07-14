@@ -9,6 +9,24 @@ Supported distributions:
   * Centos
   * Fedora
 
+What is checked ?
+
+  * Root Access
+  * Distro Type and Version
+  * Curl tool presence
+  * Availble RAM size
+  * Availble Disk Space
+  * Ruby language runtime presence and version
+  * Conectivity to rubygems.org
+  * Gem tool presence 
+  * Bundler gem and command presence
+  * compiler presence and version
+  * mysql client development files
+  * postgresql client presence
+  * Imagick development files presence
+  * RedmineInstaller tool presence
+
+
 ## How to use ?
 
 deploy the [easycheck.sh](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.sh) script to destination server somehow and run:
