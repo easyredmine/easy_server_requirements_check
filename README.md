@@ -16,7 +16,8 @@ deploy the [easycheck.sh](https://raw.githubusercontent.com/easyredmine/easy_ser
         sh ./easycheck.sh
 
 
-[](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.png)
+Here you can see the script in action:
+![Screenshot](https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.png)
 
 ## How to test ?
 
