@@ -4,19 +4,24 @@ Check destination system for (Easy)Redmine requirements.
 
 ## How to use ?
 
-Deploy the (checkreq.sh) script to destination server and run:
+Run script directly from web:
 
-    sh ./checkreq.sh
+    curl -sSL https://raw.githubusercontent.com/easyredmine/easy_server_requirements_check/master/easycheck.sh | bash -s
+
+or deploy the (easycheck.sh) script somehow to destination server and run:
+
+        sh ./easycheck.sh
 
 
 
 ## How to test ?
 
-We use [vagrant](https://www.vagrantup.com/) In Vagrantfile you can change the linux distro tested on.
+We use [vagrant](https://www.vagrantup.com/) In Vagrantfile you can change the linux distro tested.
+On your machine run this commands:
 
 ```
 vagrant ssh
 sudo su
 cd /vagrant/
-./checkreq.sh
+./easycheck.sh
 ```

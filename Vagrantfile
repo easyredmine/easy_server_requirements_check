@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     machine.vm.box = "suse/sles11sp3"
     machine.vm.hostname = "redmineserver"
     machine.vm.network :public_network
-#    machine.vm.provision :shell, path: "checkreq.sh", args: "42", keep_color: true
+#    machine.vm.provision :shell, path: "easycheck.sh", args: "42", keep_color: true
   end
 
 end
