@@ -1,30 +1,33 @@
 # EaseRedmine requirements check
 
-Check destination system for (Easy)Redmine requirements.
+Bash shell script that Check destination system for (Easy)Redmine requirements.
 
-Supported distributions:
+### Supported distributions:
 
-  * Debian
-  * Ubuntu
-  * Centos
-  * Fedora
+  * [Debian](https://www.debian.org/)
+  * [Ubuntu](https://www.ubuntu.com/)
+  * [Centos](https://www.centos.org/) & [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
+  * [Fedora](https://getfedora.org/)
+  
+    > Please feel free to send us pull request for another distribution (Suse, Arch, Windows etc.  would be nice ;)
 
-What is checked ?
 
-  * Root Access
-  * Distro Type and Version
-  * Curl tool presence
+### What is checked ?
+
+  * [Root Access](http://www.linfo.org/root.html)
+  * [Distro Type and Version](https://en.wikipedia.org/wiki/Linux_distribution)
+  * [Curl tool](https://curl.haxx.se/) presence
   * Availble RAM size
   * Availble Disk Space
-  * Ruby language runtime presence and version
-  * Conectivity to rubygems.org
-  * Gem tool presence 
-  * Bundler gem and command presence
-  * compiler presence and version
-  * mysql client development files
-  * postgresql client presence
-  * Imagick development files presence
-  * RedmineInstaller tool presence
+  * [Ruby language](https://www.ruby-lang.org) runtime presence and version
+  * Conectivity to [rubygems.org](http://rubygems.org)
+  * [Gem tool](http://guides.rubygems.org/command-reference/#gem-install) presence 
+  * [Bundler gem and command](http://bundler.io/) presence
+  * [compiler](https://gcc.gnu.org/) presence and version
+  * [mysql client](https://dev.mysql.com/doc/refman/5.7/en/c-api.html) development files
+  * [postgresql client](https://www.postgresql.org/docs/9.3/static/app-psql.html) presence
+  * [Imagick](https://www.imagemagick.org) development files presence
+  * [Redmine-Installer](https://github.com/easyredmine/redmine-installer) tool presence
 
 
 ## How to use ?
