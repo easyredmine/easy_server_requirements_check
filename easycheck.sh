@@ -246,8 +246,8 @@ function  CheckGemsConnectivity(){
 }
 
 function CheckRubyVersion(){
-  MINRUBYVER="2"
-  OKRUBYVER="2.3"
+  MINRUBYVER="2.3"
+  OKRUBYVER="2.4.3"
 
   if [ -f "/etc/profile.d/rvm.sh" ]; then
     source /etc/profile.d/rvm.sh
