@@ -176,7 +176,7 @@ function CheckMemory() {
   then
     GreenColor " - for large installation "; OkMark
   else
-    if [ "$MEMORY" -le "$OKMEM" ]
+    if [ "$MEMORY" -ge "$OKMEM" ]
     then
       BlueColor " - for small installation"; OkMark
     else
