@@ -246,8 +246,8 @@ function  CheckGemsConnectivity(){
 }
 
 function CheckRubyVersion(){
-  MINRUBYVER="2.3"
-  OKRUBYVER="2.4.3"
+  MINRUBYVER="2.6"
+  OKRUBYVER="2.6.7"
 
   if [ -f "/etc/profile.d/rvm.sh" ]; then
     source /etc/profile.d/rvm.sh
@@ -322,6 +322,7 @@ function CheckPostgreSQL(){
   if [ $(commandExists psql) == "true" ]; then
     YellowColor "PostgreSQL "
     BlueColor "client "
+    RedColor "PostgreSQl is not supported any more. Please consider switching to MySQL."
     if type "pg_config" &> /dev/null;
     then
       if [ `find /usr/ -name 'pg_config.h'|wc -l` == "0" ];
@@ -444,6 +445,30 @@ function CheckRedmineInstaller(){
   echo
 }
 
+function CheckNodejs(){
+  WhiteColor "Redmine installer:         "
+  if [ $(commandExists node) == "true" ]; then
+    GreenColor `node -v | tail -n 1`" "
+    which node
+  else
+    YellowColor "Install it: "
+    WhiteColor "sudo apt install nodejs"
+  fi
+  echo
+}
+
+function CheckRedisServer(){
+  WhiteColor "Redmine installer:         "
+  if [ $(commandExists redis-server) == "true" ]; then
+    GreenColor `redis-server -v | tail -n 1 |  awk '{print $3 }'`" "
+    which redis-server
+  else
+    YellowColor "Install it: "
+    WhiteColor "sudo apt install redis-server"
+  fi
+  echo
+}
+
 MagentaColor "\nEasyRedmine requirements Check\n\n"
 
 
@@ -458,3 +483,5 @@ CheckBundler
 CheckDatabase
 CheckImagick
 CheckRedmineInstaller
+CheckNodejs
+CheckRedisServer
